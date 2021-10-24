@@ -15,5 +15,7 @@
     "paths": {
       "@": ["./src"]
     }
-  }
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "lib", "es"]
 }
