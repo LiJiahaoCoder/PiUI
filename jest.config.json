@@ -1,6 +1,6 @@
 {
   "testEnvironment": "jsdom",
-  "setupFilesAfterEnv ": ["<rootDir>/tests/setup.ts"],
+  "setupFilesAfterEnv": ["<rootDir>/tests/setup.ts"],
   "testMatch": ["<rootDir>/tests/**/*.test.{ts,tsx}"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
   "transform": {
