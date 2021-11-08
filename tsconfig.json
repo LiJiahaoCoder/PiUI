@@ -9,11 +9,11 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "noUnusedLocals": true,
+    "resolveJsonModule": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
-    "baseUrl": "./",
     "paths": {
-      "@": ["./src"]
+      "@/*": ["./src"]
     }
   },
   "include": ["./src/**/*", "./tests/**/*"],
