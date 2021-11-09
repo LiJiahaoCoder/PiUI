@@ -31,7 +31,6 @@
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@types/react-dom": "^17.0.10",
-    "@types/rollup-plugin-auto-external": "^2.0.2",
     "babel-jest": "^27.3.1",
     "commitizen": "^4.2.4",
     "core-js": "^3.18.3",

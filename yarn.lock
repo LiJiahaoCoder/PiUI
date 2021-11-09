@@ -1643,13 +1643,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/rollup-plugin-auto-external@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/@types/rollup-plugin-auto-external/-/rollup-plugin-auto-external-2.0.2.tgz#d1c9697c2445db956df5215d68c35b5fe794b99c"
-  integrity sha512-1Xtl9S4yQapD+A4mX1sqYVXm3UmVA9oIEf2YKEhRTCUNxlAM3DoKK1HPxrGMemDJNfhe6Yl3w0JsAGvIN5j/ow==
-  dependencies:
-    rollup ">=2.0.0"
-
 "@types/scheduler@*":
   version "0.16.2"
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
@@ -4242,13 +4235,6 @@ rollup-pluginutils@^2.8.1:
   integrity sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   dependencies:
     estree-walker "^0.6.1"
-
-rollup@>=2.0.0:
-  version "2.58.3"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-2.58.3.tgz#71a08138d9515fb65043b6a18618b2ed9ac8d239"
-  integrity sha512-ei27MSw1KhRur4p87Q0/Va2NAYqMXOX++FNEumMBcdreIRLURKy+cE2wcDJKBn0nfmhP2ZGrJkP1XPO+G8FJQw==
-  optionalDependencies:
-    fsevents "~2.3.2"
 
 rollup@^2.58.3:
   version "2.59.0"

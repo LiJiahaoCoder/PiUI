@@ -17,6 +17,7 @@ const input = path.join(rootDir, './index.ts');
  */
 const config = {
   input,
+  treeshake: true,
   external: ['react', 'react-dom'],
   output: [
     {
