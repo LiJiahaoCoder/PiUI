@@ -3,6 +3,7 @@ const { RollupOptions } = require('rollup');
 const json = require('@rollup/plugin-json');
 const alias = require('@rollup/plugin-alias');
 const babel = require('rollup-plugin-babel');
+const { terser } = require('rollup-plugin-terser');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const typescript = require('@rollup/plugin-typescript');
@@ -48,6 +49,7 @@ const config = {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     }),
     json(),
+    terser(),
   ],
 };
 

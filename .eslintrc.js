@@ -35,8 +35,16 @@ const config = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     indent: ['error', 2],
+    'sort-imports': [
+      'error',
+      {
+        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+      }
+    ],
+    'object-curly-spacing': ['error', 'always'],
     'react-hooks/exhaustive-deps': 'error',
     'react/no-unused-prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };
 
