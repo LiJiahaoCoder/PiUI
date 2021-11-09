@@ -1,12 +1,15 @@
+'use strict';
+
 const path = require('path');
 const { RollupOptions } = require('rollup');
 const json = require('@rollup/plugin-json');
 const alias = require('@rollup/plugin-alias');
 const babel = require('rollup-plugin-babel');
-const { terser } = require('rollup-plugin-terser');
-const { default: resolve } = require('@rollup/plugin-node-resolve');
+const postcss = require('rollup-plugin-postcss');
 const commonjs = require('@rollup/plugin-commonjs');
 const typescript = require('@rollup/plugin-typescript');
+const { terser } = require('rollup-plugin-terser');
+const { default: resolve } = require('@rollup/plugin-node-resolve');
 const pkg = require('./package.json');
 
 const rootDir = path.resolve(__dirname, './src');
@@ -34,7 +37,7 @@ const config = {
   ],
   plugins: [
     alias({
-      resolve: ['.js', '.jsx', '.ts', '.tsx'],
+      resolve: ['.ts', '.tsx', '.js', '.jsx'],
       entries: {
         '@/*': path.resolve(__dirname, './src'),
       },
@@ -46,9 +49,10 @@ const config = {
     commonjs(),
     babel({
       exclude: 'node_modules/**',
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     }),
     json(),
+    postcss(),
     terser(),
   ],
 };

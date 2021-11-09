@@ -1,3 +1,5 @@
+'use strict';
+
 const { ESLintOptions } = require('eslint');
 
 /**

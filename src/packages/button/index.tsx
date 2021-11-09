@@ -1,12 +1,14 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
+import styles from './index.less';
+
 export interface ButtonProps {
   type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
   children: ReactNode;
 }
 
 const Button = ({ type = 'button', children }: ButtonProps) => (
-  <button type={type}>
+  <button className={styles.piuiButton} type={type}>
     {children}
   </button>
 );

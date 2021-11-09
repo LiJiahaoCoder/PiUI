@@ -1,3 +1,5 @@
+'use strict';
+
 const { TransformOptions } = require('@babel/core');
 const { version } = require('core-js/package.json');
 const env = process.env.NODE_ENV;
