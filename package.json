@@ -8,6 +8,9 @@
   "repository": "https://github.com/LiJiahaoCoder/PiUI.git",
   "author": "Jiahao Li <lijiahao_shandong@163.com>",
   "license": "MIT",
+  "engines": {
+    "node": "^14.18.1"
+  },
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
@@ -32,10 +35,16 @@
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
     "babel-jest": "^27.3.1",
     "commitizen": "^4.2.4",
     "core-js": "^3.18.3",
     "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-xo": "^0.39.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.3.1",
