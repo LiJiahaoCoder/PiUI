@@ -10,8 +10,9 @@ const commonjs = require('@rollup/plugin-commonjs');
 const typescript = require('@rollup/plugin-typescript');
 const { terser } = require('rollup-plugin-terser');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
-const pkg = require('./package.json');
 
+const mainPath = 'lib/cjs/index.js';
+const modulePath = 'lib/es/index.es.js';
 const rootDir = path.resolve(__dirname, './src');
 const input = path.join(rootDir, './index.ts');
 
@@ -25,31 +26,31 @@ const config = {
   external: ['react', 'react-dom'],
   output: [
     {
-      file: pkg.main,
+      file: mainPath,
       format: 'cjs',
       sourcemap: false,
     },
     {
-      file: pkg.module,
+      file: modulePath,
       format: 'esm',
       sourcemap: false,
     }
   ],
   plugins: [
     alias({
-      resolve: ['.ts', '.tsx', '.js', '.jsx'],
+      resolve: ['.ts', '.tsx'],
       entries: {
         '@/*': path.resolve(__dirname, './src'),
       },
     }),
     typescript(),
     resolve({
-      extensions: ['.ts', '.tsx', '.js', '.jsx'],
+      extensions: ['.ts', '.tsx'],
     }),
     commonjs(),
     babel({
       exclude: 'node_modules/**',
-      extensions: ['.ts', '.tsx', '.js', '.jsx'],
+      extensions: ['.ts', '.tsx'],
     }),
     json(),
     postcss(),
