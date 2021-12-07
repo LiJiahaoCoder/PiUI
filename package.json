@@ -14,7 +14,7 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
-    "test": "jest",
+    "test": "jest --coverage",
     "prebuild:type": "rimraf ./lib",
     "build:type": "tsc -p ./tsconfig.build.json",
     "build:source": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
