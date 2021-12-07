@@ -19,7 +19,8 @@
     "build:type": "tsc -p ./tsconfig.build.json",
     "build:source": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
     "build": "yarn build:type && yarn build:source",
-    "postbuild": "cp {package.json,LICENSE,README.md} ./lib"
+    "postbuild": "cp {package.json,LICENSE,README.md} ./lib",
+    "start:doc": "parcel doc/index.html"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.8",
@@ -27,6 +28,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
+    "@parcel/transformer-typescript-types": "^2.0.1",
     "@rollup/plugin-alias": "^3.1.8",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
