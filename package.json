@@ -54,6 +54,7 @@
     "cssnano": "^5.0.10",
     "eslint": "^8.2.0",
     "eslint-config-xo": "^0.39.0",
+    "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.4",

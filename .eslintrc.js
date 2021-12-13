@@ -10,6 +10,7 @@ const config = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true,
   },
   extends: [
     'plugin:react/recommended',
@@ -29,6 +30,7 @@ const config = {
     sourceType: 'module',
   },
   plugins: [
+    'jest',
     'react',
     'react-hooks',
     '@typescript-eslint',
