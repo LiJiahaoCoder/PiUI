@@ -10,6 +10,9 @@
       "publicUrl": "./"
     }
   },
+  "alias": {
+    "@/*": "./src/$1"
+  },
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",

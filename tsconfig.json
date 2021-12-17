@@ -14,7 +14,7 @@
     "noImplicitAny": true,
     "noEmit": true,
     "paths": {
-      "@/*": ["./src"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["./src/**/*", "./tests/**/*", "./doc/**/*"],
