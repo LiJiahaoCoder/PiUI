@@ -1,4 +1,4 @@
-import { Button } from '@/';
+import { Button } from '@/index';
 import { render } from '@testing-library/react';
 
 describe('Button test', () => {

@@ -4,7 +4,7 @@
   "testMatch": ["<rootDir>/tests/**/*.test.{ts,tsx}"],
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
   "transform": {
-    "^.+\\.(js|ts)x?$": "babel-jest",
+    "^.+\\.(js|ts)x?$": "<rootDir>/babel.jest.config.js",
     "^.+\\.(png|jpe?g|gif|svg|woff2?|eot|ttf|otf)$": "jest-transform-stub"
   },
   "moduleNameMapper": {

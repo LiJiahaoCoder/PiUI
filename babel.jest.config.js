@@ -1,5 +1,6 @@
 'use strict';
 
+const { default: { createTransformer } } = require('babel-jest');
 const { TransformOptions } = require('@babel/core');
 const { version } = require('core-js/package.json');
 const env = process.env.NODE_ENV;
@@ -39,4 +40,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+module.exports = createTransformer(config);
