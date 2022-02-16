@@ -1,3 +1,4 @@
+import '@/packages/styles/default.css';
 import { render } from 'react-dom';
 
 render(

@@ -12,13 +12,13 @@ const Button = ({
   children,
   type = 'button',
   loading = false,
-  ariaLabel = 'piui-button',
+  ariaLabel = 'pi-button',
 }: ButtonProps) => (
   <button
     type={type}
     disabled={loading}
     aria-label={ariaLabel}
-    className="piui-button"
+    className="pi-button"
   >
     {children}
   </button>
