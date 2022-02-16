@@ -1,6 +1,5 @@
+import './index.less';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
-
-import styles from './index.less';
 
 export interface ButtonProps {
   type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
@@ -19,7 +18,7 @@ const Button = ({
     type={type}
     disabled={loading}
     aria-label={ariaLabel}
-    className={styles.piuiButton}
+    className="piui-button"
   >
     {children}
   </button>

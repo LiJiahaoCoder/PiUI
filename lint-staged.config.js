@@ -9,6 +9,6 @@ module.exports = {
     'tsc',
   ],
   '**/*.less': (filenames) => [
-    `cross-env NODE_ENV=production stylelint --fix ${filenames.join(' ')}`,
+    `cross-env NODE_ENV=production stylelint --fix ${filenames.join(' ')} --custom-syntax postcss-less`,
   ],
 };

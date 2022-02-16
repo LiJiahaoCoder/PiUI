@@ -1,7 +1,6 @@
 'use strict';
 
 const { Config } = require('stylelint');
-const PROD = process.env.NODE_ENV === 'production';
 
 /**
  * @const
@@ -9,9 +8,7 @@ const PROD = process.env.NODE_ENV === 'production';
  */
 const config = {
   extends: 'stylelint-config-standard',
-  rules: {
-    'prettier/prettier': PROD ? true : null,
-  },
+  plugins: ['stylelint-less'],
 };
 
 module.exports = config;
